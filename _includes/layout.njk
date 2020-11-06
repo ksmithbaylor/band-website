@@ -1,0 +1,26 @@
+---
+bandName: 80 Proof
+---
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ bandName }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/styles/fonts.css" type="text/css">
+    <link rel="stylesheet" href="/styles/main.css" type="text/css">
+  </head>
+  <body>
+    <a href="/" class="header-link"><h1>{{ bandName }}</h1></a>
+    <main>
+      {{ content | safe }}
+    </main>
+    <script src="https://unpkg.com/pjax/pjax.min.js"></script>
+    <script type="text/javascript">
+      var pjax = new Pjax({
+        selectors: ['main'],
+        cacheBust: false
+      });
+    </script>
+  </body>
+</html>

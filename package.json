@@ -1,0 +1,14 @@
+{
+  "name": "80proof",
+  "version": "1.0.0",
+  "main": "index.njk",
+  "author": "Kevin Smith <ksmithbaylor@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy"
+  },
+  "dependencies": {
+    "@11ty/eleventy": "^0.11.1"
+  }
+}
