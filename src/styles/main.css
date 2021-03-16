@@ -61,7 +61,8 @@ h1 {
   height: 9rem;
   width: 100%;
   max-width: 25rem;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
   font-size: 2rem;
   transition: filter 200ms ease, color 200ms ease, box-shadow 200ms ease;
 }
@@ -94,7 +95,8 @@ h1 {
   .button {
     width: 20rem;
     height: 10rem;
-    margin: unset;
+    margin-left: initial;
+    margin-right: initial;
   }
 
   .button + .button,
@@ -119,6 +121,8 @@ h1 {
 
 form {
   width: 100%;
+  max-width: 40rem;
+  margin: 0 auto;
 }
 
 form input,
