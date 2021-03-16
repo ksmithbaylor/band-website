@@ -1,0 +1,20 @@
+---
+layout: layout
+---
+
+<div class="videos">
+  {% for video_id in videos %}
+    <div class="video">
+      <p>Loading...</p>
+      <iframe
+        src="https://www.youtube.com/embed/{{ video_id }}"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      >
+      </iframe>
+    </div>
+  {% else %}
+    <p>Check back later for videos of our recent gigs!</p>
+  {% endfor %}
+</div>
