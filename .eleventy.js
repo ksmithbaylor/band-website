@@ -7,4 +7,11 @@ module.exports = eleventyConfig => {
     'woff',
     'css'
   ]);
+
+  return {
+    dir: {
+      input: 'src',
+      output: 'dist'
+    }
+  };
 };
